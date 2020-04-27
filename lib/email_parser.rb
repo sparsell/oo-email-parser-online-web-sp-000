@@ -6,15 +6,15 @@
 class EmailAddressParser
   attr_accessor :email_addresses
 
-
+  def initialize(email_addresses)
+    email_addresses = email_addresses
+  end
+  
+  #instance method that returns an array of email addresses
   def parse
-    emails = email_addresses.split(",") #|| email_addresses.split(" ")
-    address = emails.collect do |name|
-      data = name.split(" , ")
-      name = data[0]
-
+    puts address = email_addresses.collect do |name|
+      name.split(" , ")
+      end
     end
     #email_address = self.new
-  end
-
 end
