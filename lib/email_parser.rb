@@ -12,8 +12,9 @@ class EmailAddressParser
 
   #instance method that returns an array of email addresses
   def parse
+    
     puts address = email_addresses.collect do |name|
-      name.split(" , ")
+      address.split(" , ")
       end
     end
     #email_address = self.new
