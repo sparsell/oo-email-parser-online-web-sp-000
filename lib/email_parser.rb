@@ -7,7 +7,7 @@ class EmailAddressParser
   attr_accessor :email_addresses
 
 
-  def parse(email_addresses)
+  def parse
     emails = email_addresses.split(",") #|| email_addresses.split(" ")
     address = emails.collect do |name|
       data = name.split(" , ")
