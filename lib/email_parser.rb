@@ -9,10 +9,10 @@ class EmailAddressParser
   def initialize(emails)
     @emails= emails
   end
-
+  
   #instance method that returns an array of email addresses
   def parse
-    @emails = @emails.split(",")
-    @emails.uniq
+    @emails = @emails.split(/[,\s]/)
+    email_array = @emails.uniq!
   end
 end
